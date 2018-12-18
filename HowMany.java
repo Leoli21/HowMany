@@ -10,7 +10,7 @@ public class HowMany {
 		int numTimes = input.nextInt();
 		int countOne, countTwo, countThree, countFour, countFive, countSix;
 		countOne = countTwo = countThree = countFour = countFive = countSix = 0;
-		for (int i = 0; i == numTimes; i++);
+		for (int i = 0; i < numTimes; i++)
 		{
 			int randomNumber = rand.nextInt(6) + 1;
 			System.out.println("Number rolled: " + randomNumber);
@@ -34,7 +34,9 @@ public class HowMany {
 				countFive += 1;
 			}
 			else
+			{
 				countSix += 1;
+			}
 		}
 		System.out.println("One: " + countOne);
 		System.out.println("Two: " + countTwo);
